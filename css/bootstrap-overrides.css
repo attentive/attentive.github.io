@@ -15,31 +15,19 @@
     text-align: center;
   }
 }
-@font-face {
-  font-family: "Computer Modern";
-  src: url('/fonts/cmunrm.otf');
-}
 
-/*@font-face {
-  font-family: "Computer Modern";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Computer Modern";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
-  font-style: italic, oblique;
-}
-@font-face {
-  font-family: "Computer Modern";
-  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
-  font-weight: bold;
-  font-style: italic, oblique;
-}*/
 body {
   font-size: 1.6em;
-  font-family: "Computer Modern";
+  font-family: 'LMRoman10-Regular', Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal; 
   font-style: serif;
+}
+
+body code {
+  font-size: 1.0em;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: normal; 
+  font-style: sans-serif;
 }
 
 h1 {

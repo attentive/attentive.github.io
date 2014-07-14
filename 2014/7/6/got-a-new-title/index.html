@@ -5,7 +5,8 @@
 <title>Got a new title</title>
 <meta content="Tom Lynch" name="author" />
 <link type="application/atom+xml" title="the attentive worker" rel="alternate" href="/atom.xml" />
-<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata" />
+<link type="text/css" rel="stylesheet" href="/fonts/lm/lm.css" />
+<link type="text/css" rel="stylesheet" href="/fonts/inconsolata/inconsolata.css" />
 <!-- MathJax -->
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -21,12 +22,19 @@ MathJax.Hub.Config({
 <link rel="stylesheet" href="/css/bootstrap-overrides.css" />
 </head>
 <body>
-<div id="nav"><div class="container-fluid"><ul class="nav navbar navbar-nav"><li class="active"><a href="#"></a><h3>home</h3></li><li class="active"><a href="#"></a><h3>about</h3></li><li class="active"><a href="#"></a><h3>archive</h3></li><li class="active"><a href="#"></a><h3>categories</h3></li><li class="active"><a href="#"></a><h3>tags</h3></li></ul></div></div>
+<div id="nav"><div class="container-fluid"><ul class="nav navbar navbar-nav"><li class="active"><a href="/"></a><h3>home</h3></li><li class="active"><a href="/about"></a><h3>about</h3></li><li class="active"><a href="/archive"></a><h3>archive</h3></li><li class="active"><a href="/categories"></a><h3>categories</h3></li><li class="active"><a href="/tags"></a><h3>tags</h3></li></ul></div></div>
 <div id="post"><h1>Test</h1><h1>Interesting</h1><h2>Stuff</h2><p>Let's put a paragraph. </p><p>Or two. </p><p>In here and see how we go.</p></div>
 <div id="related"></div>
 <div id="footer"></div>
 <script src="/js/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script src="/js/highlight.min.js"></script<script>
+$(document).ready(function() {
+    $('pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+      });
+    })
+</script>
 <script src="/js/history.js"></script>
 <script src="/js/react-0.10.0.js"></script>
 <script src="/js/showdown/showdown.js"></script>
