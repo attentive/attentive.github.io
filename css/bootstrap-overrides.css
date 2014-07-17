@@ -18,12 +18,13 @@
 
 body {
   font-size: 1.6em;
-  font-family: 'LMRoman10-Regular', Georgia, 'Times New Roman', Times, serif;
+/*LMRoman10-Regular*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal; 
   font-style: serif;
 }
 
-body code {
+body code, body kbd, body pre, body samp {
   font-size: 1.0em;
   font-family: 'Inconsolata', sans-serif;
   font-weight: normal; 
@@ -40,6 +41,13 @@ h2 {
 
 h3 {
   font-size: 2em;
+}
+
+pre {
+  background-color: transparent;
+  border-radius: 0px;
+  border-left: none;
+  border-right: none;
 }
 
 

@@ -12,20 +12,29 @@
 MathJax.Hub.Config({
 	    tex2jax: {
 	      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-	      processEscapes: true
+	      //processEscapes: true
 	    }
 	  });
 </script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full" type="text/javascript"></script>
 <link rel="stylesheet" href="/css/bootstrap.min.css" />
 <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
 <link rel="stylesheet" href="/css/bootstrap-overrides.css" />
+<link rel="stylesheet" href="/css/pygmentize-vs.css" />
 </head>
 <body>
-<div id="nav"><div class="container-fluid"><ul class="nav navbar navbar-nav"><li class="active"><a href="/"></a><h3>home</h3></li><li class="active"><a href="/about"></a><h3>about</h3></li><li class="active"><a href="/archive"></a><h3>archive</h3></li><li class="active"><a href="/categories"></a><h3>categories</h3></li><li class="active"><a href="/tags"></a><h3>tags</h3></li></ul></div></div>
-<div id="post"></div>
-<div id="related"></div>
-<div id="footer"></div>
+<div id="nav"><nav class="navbar navbar-default"><div class="container-fluid"><div class="collapse navbar-collapse"><ul class="nav navbar navbar-nav"><li class="active"><h3><a href="/">home</a></h3></li><li class="active"><h3><a href="/about">about</a></h3></li><li class="active"><h3><a href="/archive">archive</a></h3></li><li class="active"><h3><a href="/categories">categories</a></h3></li><li class="active"><h3><a href="/tags">tags</a></h3></li></ul></div></div></nav></div>
+<div class="container">
+  <div class="row">
+    <div id="post"></div>
+  </div>
+  <div class="row">
+    <div id="related"></div>
+  </div>
+  <div class="row">
+    <div id="footer"></div>
+  </div>
+</div>
 <script src="/js/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/highlight.min.js"></script<script>
@@ -42,7 +51,6 @@ $(document).ready(function() {
 <script src="/js/d3.v3.min.js"></script>
 <script type="text/javascript" src="/js/out/goog/base.js"></script>
 <script type="text/javascript" src="/js/silkscreen.js"></script>
-<script type="text/javascript">goog.require("silkscreen.page");</script>
 </body>
 
 
