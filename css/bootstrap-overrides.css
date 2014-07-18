@@ -1,18 +1,7 @@
 @media (min-width: 768px) {
-  .navbar .navbar-nav {
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-    float: none;
-  }
-
   .navbar-default {
     background-color: transparent;
     background: transparent;
-  }
-
-  .navbar .navbar-collapse {
-    text-align: center;
   }
 }
 
@@ -32,15 +21,15 @@ body code, body kbd, body pre, body samp {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 3.2em;
+  font-size: 2.4em;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 pre {
