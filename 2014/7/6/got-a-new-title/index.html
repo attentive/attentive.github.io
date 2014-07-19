@@ -5,7 +5,6 @@
 <title>Got a new title</title>
 <meta content="Tom Lynch" name="author" />
 <link type="application/atom+xml" title="the attentive worker" rel="alternate" href="/atom.xml" />
-<link type="text/css" rel="stylesheet" href="/fonts/lm/lm.css" />
 <link type="text/css" rel="stylesheet" href="/fonts/inconsolata/inconsolata.css" />
 <!-- MathJax -->
 <script type="text/x-mathjax-config">
@@ -25,39 +24,33 @@ MathJax.Hub.Config({
 <body>
 <div class="container">
   <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-      <div class="row">
-	<div id="post"><h1>Test</h1><h1>Interesting</h1><h2>Stuff</h2><p>Let's put a paragraph. </p><p>Or two. </p><p>In here and see how we go.</p></div>
-      </div>
-      <div class="row">
-	<div id="related"></div>
-      </div>
-      <div class="row">
-	<div id="footer"></div>
-      </div>
-    </div>
     <div class="col-md-2">
-      <div id="nav"><nav><div class="container-fluid"><ul class="nav nav-stacked"><li class="active"><h3><a href="/">home</a></h3></li><li class="active"><h3><a href="/about">about</a></h3></li><li class="active"><h3><a href="/archive">archive</a></h3></li><li class="active"><h3><a href="/categories">categories</a></h3></li><li class="active"><h3><a href="/tags">tags</a></h3></li></ul></div></nav></div>
+      <div class="silkscreen-nav"><nav><ul class="nav nav-stacked"><li class="active"><h3><a href="/">home</a></h3></li><li class="active"><h3><a href="/about">about</a></h3></li><li class="active"><h3><a href="/archive">archive</a></h3></li><li class="active"><h3><a href="/categories">categories</a></h3></li><li class="active"><h3><a href="/tags">tags</a></h3></li></ul></nav></div>
+      <br />
+      <script src="http://pinboard.in//widgets/v1/linkroll/?user=attentive&amp;count=10&amp;tag=reading" language="javascript"></script>
     </div>
-  </div>
-</div>
+    <div class="main col-md-8">
+      <div class="row">
+	<h1 class="silkscreen-title">Got a new title</h1>
+	  <h6 class="silkscreen-date"></h6>
+	  </div>
+	  <div class="row">
+	    <div class="silkscreen-post"><h1>Test</h1><h1>Interesting</h1><h2>Stuff</h2><p>Let's put a paragraph. </p><p>Or two. </p><p>In here and see how we go.</p></div>
+	  </div>
+	  <div class="row">
+	    <div class="silkscreen-related"></div>
+	  </div>
+	  <div class="row">
+	    <div class="silkscreen-footer"></div>
+	  </div>
+	</div>
+	<div class="col-md-2"></div>
+      </div>
+    </div>
+  
+
 <script src="/js/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-<script src="/js/highlight.min.js"></script<script>
-$(document).ready(function() {
-    $('pre code').each(function(i, block) {
-      hljs.highlightBlock(block);
-      });
-    })
-</script>
-<script src="/js/history.js"></script>
-<script src="/js/react-0.10.0.js"></script>
-<script src="/js/showdown/showdown.js"></script>
-<script src="/js/leaflet-0.7.3.js"></script>
-<script src="/js/d3.v3.min.js"></script>
-<script type="text/javascript" src="/js/out/goog/base.js"></script>
-<script type="text/javascript" src="/js/silkscreen.js"></script>
 </body>
 
 

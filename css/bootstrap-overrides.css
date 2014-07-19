@@ -1,13 +1,19 @@
-@media (min-width: 768px) {
-  .navbar-default {
-    background-color: transparent;
-    background: transparent;
-  }
+.main {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.navbar-default {
+  background-color: transparent;
+  background: transparent;
+}
+
+nav li {
+  text-align: right;
 }
 
 body {
   font-size: 1.6em;
-/*LMRoman10-Regular*/
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal; 
   font-style: serif;
@@ -20,16 +26,27 @@ body code, body kbd, body pre, body samp {
   font-style: sans-serif;
 }
 
+.date {
+  margin-left: 20px;
+  font-size: 1.0em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: sans-serif;
+}
+
 h1 {
   font-size: 3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2 {
   font-size: 2.4em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h3 {
   font-size: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 pre {
@@ -38,5 +55,11 @@ pre {
   border-left: none;
   border-right: none;
 }
+
+/* Pinboard styles */
+.pin-title { font-size:1em;text-decoration:none;color:#00a}
+.pin-description { color:#555; }
+.pin-tag { color:#18c;text-decoration:none;font-size:0.9em; }
+/*.pin-item { text-align: right; }*/
 
 
