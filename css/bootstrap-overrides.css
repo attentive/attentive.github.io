@@ -56,6 +56,15 @@ pre {
   border-right: none;
 }
 
+.silkscreen-post {
+  border-bottom-color: #cccccc;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+
 /* Pinboard styles */
 .pin-title { font-size:1em;text-decoration:none;color:#00a}
 .pin-description { color:#555; }
