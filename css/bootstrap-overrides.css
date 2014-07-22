@@ -1,26 +1,39 @@
 .main {
-  margin-left: 50px;
-  margin-top: 50px;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
 .navbar-default {
   background-color: transparent;
   background: transparent;
+  border: none;
 }
 
-nav li {
+.navbar-collapse
+{
+  padding: 0px;
+}
+
+/*ul.nav {
   text-align: right;
+}*/
+
+/*ul.nav li {
+  float: right;
+}*/
+
+
+nav h3 {
+  margin-right: 20px;
 }
 
 body {
-  font-size: 1.6em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal; 
   font-style: serif;
 }
 
 body code, body kbd, body pre, body samp {
-  font-size: 1.0em;
   font-family: 'Inconsolata', sans-serif;
   font-weight: normal; 
   font-style: sans-serif;
@@ -28,24 +41,20 @@ body code, body kbd, body pre, body samp {
 
 .date {
   margin-left: 20px;
-  font-size: 1.0em;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: sans-serif;
 }
 
 h1 {
-  font-size: 3em;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2 {
-  font-size: 2.4em;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h3 {
-  font-size: 1.5em;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -69,6 +78,27 @@ pre {
 .pin-title { font-size:1em;text-decoration:none;color:#00a}
 .pin-description { color:#555; }
 .pin-tag { color:#18c;text-decoration:none;font-size:0.9em; }
-/*.pin-item { text-align: right; }*/
 
+@media (max-width: 992px) {
+  .col-md-2, .col-md-8 
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
 
+@media (max-width: 768px) {
+  .col-md-2, .col-md-8 
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
