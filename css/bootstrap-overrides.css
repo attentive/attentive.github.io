@@ -14,15 +14,6 @@
   padding: 0px;
 }
 
-/*ul.nav {
-  text-align: right;
-}*/
-
-/*ul.nav li {
-  float: right;
-}*/
-
-
 nav h3 {
   margin-right: 20px;
 }
@@ -35,6 +26,7 @@ body {
 
 body code, body kbd, body pre, body samp {
   font-family: 'Inconsolata', sans-serif;
+  font-size: 1em;
   font-weight: normal; 
   font-style: sans-serif;
 }
