@@ -1,17 +1,24 @@
-.main {
-  margin-left: 40px;
-  margin-top: 20px;
-}
-
 .navbar-default {
   background-color: transparent;
   background: transparent;
   border: none;
+  border-color: transparent;
 }
 
 .navbar-collapse
 {
   padding: 0px;
+}
+
+.navbar-toggle
+{
+  float: left;
+  height: 24px;
+  width: 24px;
+  margin-top: 20px;
+  padding: 0px;
+  text-align: center;
+  vertical-align: center;
 }
 
 nav h3 {
@@ -26,16 +33,13 @@ body {
 
 body code, body kbd, body pre, body samp {
   font-family: 'Inconsolata', sans-serif;
-  font-size: 1em;
-  font-weight: normal; 
-  font-style: sans-serif;
+  font-size: 100%;
 }
 
 .date {
   margin-left: 20px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-style: sans-serif;
 }
 
 h1 {
@@ -65,13 +69,18 @@ pre {
   padding-bottom: 20px;
 }
 
-
-/* Pinboard styles */
-.pin-title { font-size:1em;text-decoration:none;color:#00a}
-.pin-description { color:#555; }
-.pin-tag { color:#18c;text-decoration:none;font-size:0.9em; }
+@media (min-width: 993px) {
+  .main {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+}
 
 @media (max-width: 992px) {
+  .silkscreen-title
+  {
+    margin-top: 0px;
+  }
   .col-md-2, .col-md-8 
   {
     padding-left: 0px;
@@ -79,11 +88,18 @@ pre {
   }
   .main {
     margin-left: 20px;
-    margin-top: 20px;
   }
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .silkscreen-title
+  {
+    margin-top: 0px;
+  }
   .col-md-2, .col-md-8 
   {
     padding-left: 0px;
@@ -91,6 +107,26 @@ pre {
   }
   .main {
     margin-left: 0px;
-    margin-top: 20px;
   }
+  .navbar-nav
+  {
+    margin: 0px;
+  }
+}
+
+/* Pinboard styles */
+.pin-title { 
+  font-size: 90%; 
+  text-decoration: none;
+  color: #00a;
+}
+
+.pin-description { 
+  color: #555; 
+}
+
+.pin-tag { 
+  color: #18c; 
+  text-decoration: none;
+  font-size:80%; 
 }
