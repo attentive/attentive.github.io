@@ -12,23 +12,18 @@
 
 .navbar-toggle
 {
-  float: left;
-  height: 24px;
-  width: 24px;
-  margin-top: 20px;
-  padding: 0px;
-  text-align: center;
-  vertical-align: center;
+  margin-right: 0px;
 }
 
-nav h3 {
+nav h3, nav h2 {
   margin-right: 20px;
+  vertical-align: baseline;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal; 
-  font-style: serif;
 }
 
 body code, body kbd, body pre, body samp {
@@ -38,16 +33,21 @@ body code, body kbd, body pre, body samp {
 
 .date {
   margin-left: 20px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
+.right-bar .silkscreen-published {
+  margin-top: 20px; /* align with post title */
+  float: right;
+}
+
 h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 h3 {
@@ -61,33 +61,38 @@ pre {
   border-right: none;
 }
 
-.silkscreen-post {
-  border-bottom-color: #cccccc;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+.left-bar, 
+.silkscreen-post .main,
+.silkscreen-post .body,
+.silkscreen-post .right-bar {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.silkscreen-post .main {
+  border-top-color: #cccccc;
+  border-top-style: solid;
+  border-top-width: 1px;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
 @media (min-width: 993px) {
   .main {
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     margin-top: 20px;
   }
 }
 
-@media (max-width: 992px) {
-  .silkscreen-title
-  {
-    margin-top: 0px;
-  }
-  .col-md-2, .col-md-8 
-  {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .main {
-    margin-left: 20px;
+/*
+24px : 30px (font-size)
+26.4px : 33px (line-height)
+33/24 → 1.375? (but this is too small)
+*/
+
+@media (min-width: 769px) and (max-width:992px) {
+  nav h3 {
+    line-height: 1.45;
   }
 }
 
@@ -95,15 +100,12 @@ pre {
   body {
     padding-left: 5px;
     padding-right: 5px;
+    width: 100%; 
+    overflow-x: hidden;
   }
-  .silkscreen-title
+  .row
   {
-    margin-top: 0px;
-  }
-  .col-md-2, .col-md-8 
-  {
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-right: 0px;
   }
   .main {
     margin-left: 0px;
@@ -111,6 +113,24 @@ pre {
   .navbar-nav
   {
     margin: 0px;
+  }
+  .silkscreen-post img,
+  .silkscreen-post svg 
+  {
+    /* Responsive images (ensure images don't scale beyond their parents) */
+
+    /* Part 1: Set a maxium relative to the parent */
+    max-width: 100%;
+
+    /* IE7-8 need help adjusting responsive images */
+    width: auto\9;
+
+    /* Part 2: Scale the height according to the width, otherwise you get stretching */
+    height: auto;
+
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
   }
 }
 
