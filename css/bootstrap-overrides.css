@@ -57,10 +57,10 @@ pre {
   border-right: none;
   border-top-color: #e7e7e7;
   border-top-style: solid;
-  border-top-width: 0.8px;
+  border-top-width: 1px;
   border-bottom-color: #e7e7e7;
   border-bottom-style: solid;
-  border-bottom-width: 0.8px;
+  border-bottom-width: 1px;
 }
 
 .left-bar, 
@@ -74,7 +74,7 @@ pre {
 .silkscreen-post .main {
   border-top-color: #e7e7e7;
   border-top-style: solid;
-  border-top-width: 0.8px;
+  border-top-width: 1px;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
