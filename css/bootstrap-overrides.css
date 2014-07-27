@@ -146,7 +146,7 @@ pre {
 .pin-title { 
   font-size: 90%; 
   text-decoration: none;
-  color: #00a;
+  color: #b00;
 }
 
 .pin-description { 
@@ -154,7 +154,7 @@ pre {
 }
 
 .pin-tag { 
-  color: #18c; 
+  color: #625755; 
   text-decoration: none;
   font-size:80%; 
 }
