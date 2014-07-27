@@ -81,7 +81,6 @@ pre {
 
 @media (min-width: 993px) {
   .main {
-    /*margin-left: 40px;*/
     margin-top: 20px;
   }
 }
@@ -106,17 +105,13 @@ pre {
 
 @media (max-width: 768px) {
   body {
-    padding-left: 5px;
-    padding-right: 5px;
     width: 100%; 
     overflow-x: hidden;
   }
   .row
   {
-    margin-right: 0px;
-  }
-  .main {
     margin-left: 0px;
+    margin-right: 0px;
   }
   .navbar-nav
   {
@@ -154,7 +149,7 @@ pre {
 }
 
 .pin-tag { 
-  color: #625755; 
+  color: #333; 
   text-decoration: none;
   font-size:80%; 
 }
