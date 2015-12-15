@@ -1,1 +1,0 @@
-{:body "# Lorem ipsum \n\n## Dolor sic amet\n\n### De gustibus\n\n1. Non\n2. Est\n3. Disputandem", :template "index.html", :title "Test Post", :published #inst "2014-07-04T00:00:00.000-00:00", :categories ["test"], :tags ["test-tag-1" "test-tag-2"]}
